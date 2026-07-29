@@ -1,16 +1,22 @@
 package br.com.connect.models;
 
+import java.util.List;
+
 /**
  *
  * @author auxiliar.tirs
  */
 public class Encomenda {
+
     private long id;
     private String status;
     private Clientes cliente;
     private double valorEntrada;
     private double valorTotal;
     private boolean retirada;
+    private Entrega entrega;
+    private Pagamentos pagamento;
+    private List<ItemEncomenda> itens;
 
     public Encomenda(long id, String status, Clientes cliente, double valorEntrada, double valorTotal, boolean retirada) {
         this.id = id;
@@ -68,4 +74,30 @@ public class Encomenda {
     public void setRetirada(boolean retirada) {
         this.retirada = retirada;
     }
+
+    public Entrega getEntrega() {
+        return entrega;
+    }
+
+    public void setEntrega(Entrega entrega) {
+        this.entrega = entrega;
+    }
+
+    public Pagamentos getPagamento() {
+        return pagamento;
+    }
+
+    public void setPagamento(Pagamentos pagamento) {
+        this.pagamento = pagamento;
+    }
+
+    public List<ItemEncomenda> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<ItemEncomenda> itens) {
+        this.itens = itens;
+    }
+    
+    
 }
