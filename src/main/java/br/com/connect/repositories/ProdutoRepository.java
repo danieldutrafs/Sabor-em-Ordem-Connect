@@ -37,7 +37,7 @@ public class ProdutoRepository {
     }
 
     public boolean editarProduto(Long id, Produto produtoAtualizado) {
-        Produto produtoAntigo = buscarId(id); //buca produto
+        Produto produtoAntigo = buscarId(id); //busca produto
 
         if (produtoAntigo != null) {
             //Atualiza os dados
