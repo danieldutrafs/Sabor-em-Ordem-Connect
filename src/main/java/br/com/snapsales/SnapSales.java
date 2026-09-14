@@ -1,4 +1,4 @@
-package br.com.snapsale;
+package br.com.snapsales;
 
 import br.com.snapsales.factories.ProdutoFactory;
 import br.com.snapsales.models.Categoria;
